@@ -4,16 +4,21 @@
 $servername = "localhost:3306";
 $username = "root";
 $password = "";
-$dbname="books";
+$dbname="ECEevents";
 
 try {
     $bdd = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	/* //Create a new DB
-	$sql="CREATE TABLE editeurs(
-		id INT(6)UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-		editeur VARCHAR (30) NOT NULL)";
+	/* //Create a new Database
+	$sql="CREATE DATABASE ECEevents";
+	$bdd->exec($sql); */
+	
+	/* //Create a new TABLE
+	$sql="CREATE TABLE photo_tag(
+		id_photo_tag INT(255) NOT NULL PRIMARY KEY,
+		tag VARCHAR (255)
+		)";
 	$bdd->exec($sql); */
 	/* //Insert multiple values in the DB
 		//Prepare SQL request and bind paramaters

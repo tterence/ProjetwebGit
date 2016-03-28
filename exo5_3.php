@@ -17,6 +17,7 @@
 					
 						echo "<option value=$rows[editeur]>";
 						}
+					$bdd->null;
 					?>
 				</datalist><br>
 			Année:<br>

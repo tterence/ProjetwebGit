@@ -30,7 +30,7 @@
 						<tr><td>Adresse:</td><td><input type="text" name="adresse" placeholder="exemple:36 quai de Grennelle 75015 Paris" ></td><td><font color="black">optionnel</font></td></tr>
 						<tr><td>Telephone:</td><td><input type="number" name="numerotel" pattern="[0-9]{8}" title="Numero de telephone" placeholder="exemple:06000000"></td><td><font color="black">optionnel</font></td></tr>
 					</table>
-
+				<p><span class="error">Login ou Pseudo deja utilise(s), veuillez en saisir un autre</span></p>
 				<br><br>
 				<center ><input type="submit" value="Inscription"></center>
 				</fieldset>

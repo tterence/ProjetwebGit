@@ -8,7 +8,7 @@ right: 0;
 .p body
 {
   position: relative;
-  background-color: #fefee2;
+  background-color: #FEFEE2;
 }
 
 .p h2
@@ -48,12 +48,12 @@ top: 250px;
 
 .identify input
 {
-  width: 200px;
-	margin-top: 10px;
-	padding: 10px 20px;
+	width: 300px;
+	height: 30px;
+	padding:5px 10px ;
 	line-height: 0.5;
-  background-color: white;
-	-webkit-border-radius: 20px;
+	background-color: white;
+	-webkit-border-radius: 10px;
 	border-radius: 20px;
 }
 
@@ -103,4 +103,23 @@ right:500px;
 {
   font-family: "Times New Roman";
   font-size: 20px;
+}
+
+.error {
+	color: #FF0000;
+}
+input, textarea {
+    text-align:center;
+}
+ 
+input:-moz-placeholder, textarea:-moz-placeholder {
+    text-align:center;
+}
+ 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    text-align:center;
+}
+ 
+input.placeholder, textarea.placeholder {
+    text-align:center;
 }

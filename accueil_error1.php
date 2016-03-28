@@ -65,6 +65,7 @@
         <center><input name="submit" accesskey="l" value="S'identifier" tabindex="4" type="submit" onClick="return verification(this.form)"></center>
       </dl>
       </form>
+	  <p><span class="error">L'authentification a echoue, veuillez recommencer</span></p>
     </fieldset>
   </div>
 

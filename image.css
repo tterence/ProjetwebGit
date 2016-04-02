@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 img {
   background-image:url(./logo.jpg);
@@ -11,3 +12,18 @@ img {
   background-attachment:fixed;
   position: absolute;
 }
+=======
+
+img {
+  background-image:url(./logo.jpg);
+  background-repeat: no-repeat;
+  top: 20px;
+}
+
+img {
+  background-image:url(./campusece.jpg);
+  background-attachment:fixed;
+  position: absolute;
+  height: 850px;
+}
+>>>>>>> origin/Modification_php

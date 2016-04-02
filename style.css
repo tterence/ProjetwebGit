@@ -1,4 +1,5 @@
-#foot footer {
+#foot footer
+{
 position: absolute;
 bottom: 0;
 left: 0;
@@ -8,19 +9,8 @@ right: 0;
 .p body
 {
   position: relative;
-  background-color: #FEFEE2;
+  background-color: #fefee2;
 }
-
-.p h2
-{
-color: #256c89;
-position: absolute;
-font-family: "Times New Roman";
-font-size: 20px;
-right:200px;
-top: 320px;
-}
-
 
 #im div
 {
@@ -36,25 +26,42 @@ text-shadow: 8px 8px 12px black;
 font-weight: bold;
 background-color: gray;
 display: flex;
+font-family: sans-serif;
+padding-left: 20px;
+padding-right: 20px;
+position: relative;
 }
 
-.p h1{
-font-size: 25px;
+.p h1
+{
+font-size: 20px;
 color: #256c89;
 position: absolute;
-right:150px;
-top: 250px;
+right:180px;
+top: 140px;
+font-family: sans-serif;
+}
+
+.p h2
+{
+color: #256c89;
+position: absolute;
+font-family: sans-serif;
+font-size: 20px;
+right:130px;
+top: 140px;
 }
 
 .identify input
 {
-	width: 300px;
-	height: 30px;
-	padding:5px 10px ;
+  width: 200px;
+	margin-top: 10px;
+	padding: 10px 20px;
 	line-height: 0.5;
-	background-color: white;
-	-webkit-border-radius: 10px;
+  background-color: white;
+	-webkit-border-radius: 20px;
 	border-radius: 20px;
+  margin: 0px;
 }
 
 /*.bordursid div {
@@ -72,7 +79,7 @@ line-height: 27px;*/
 
 .identify fieldset
 {
-top:370px;
+top:200px;
 width:10px;
 position: absolute;
 left: 800px;
@@ -81,8 +88,12 @@ right:500px;
 
 .menug fieldset
 {
+  background-color: white;
   width: 200px;
   height: 600px;
+  position: absolute;
+  top: 130px;
+  left: 0px;
 }
 
 /*table input
@@ -96,30 +107,3 @@ right:500px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
 }*/
-
-
-
-.p p
-{
-  font-family: "Times New Roman";
-  font-size: 20px;
-}
-
-.error {
-	color: #FF0000;
-}
-input, textarea {
-    text-align:center;
-}
- 
-input:-moz-placeholder, textarea:-moz-placeholder {
-    text-align:center;
-}
- 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    text-align:center;
-}
- 
-input.placeholder, textarea.placeholder {
-    text-align:center;
-}

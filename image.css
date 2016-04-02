@@ -2,12 +2,12 @@
 img {
   background-image:url(./logo.jpg);
   background-repeat: no-repeat;
-  top: 20px
+  top: 20px;
 }
 
 img {
   background-image:url(./campusece.jpg);
-  background-repeat: no-repeat;
   background-attachment:fixed;
   position: absolute;
+  height: 850px;
 }

@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" href="image.css" href="inscription.html" disabled="" href="image.html" type="text/css" />
-    <script language="javascript" src="connexion.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" href="image.css" href="inscription.html" disabled="" type="text/css" />
+    <script language="javascript" src="./inscrip_java.js" type="text/javascript"></script>
     <title>LifeOfEcePARTY</title>
   </head>
 
@@ -11,7 +11,6 @@
 
     <header>
         <center > Live Event Of ECE </center>
-        <h>  jb </h>
         <div id="im"><!--logo de lecole qui sera sur les pages-->
         <img src="./logo.jpg"/>
         </div>
@@ -19,51 +18,37 @@
 
     <img src="./campusece.jpg"/>
 
-
-    <p>Bienvenue ! Souhaites tu publier ou voir ce qui se trame dans ton ecole?</p>
-
-  <div class="menug">
+  <!--<div class="menug">
     <fieldset>
     <nav>
       <ul>
         <li><a href="file:///C:/Users/TOSHIBA%20PC/Documents/page/inscription.html"> Inscription</a></li>
-        <li><a href="file:///C:/Users/TOSHIBA%20PC/Documents/page/acceuil.html"> S'identifier</a></li>
-        <li><a href="#"> Trouve ton ami</a></li>
       </ul>
     </fieldset>
-      <!--<SPAN style="position: absolute; top: 50 px; left: 500 px;">-->
-  </div>
+  </div>-->
 
   <h1> Entrez votre identifiant et votre mot de passe: </h1>
 
   <div class="identify">
     <fieldset>
-      <form name="forum" method="post" action="acceuil.html" onSubmit="return verification(this.form)">
-      <!--<table border=0 align="center">
-
-
-      <tr><td>Nom Utilisateur<font color="red">*</font></td><td><input type="texte" name="nom" ></td></tr>
-      <tr><td>Mot de Passe<font color="red">*</font></td><td><input type="texte" name="mdp" ></td></tr>
-
-    </table>-->
-    <!--<div class="bordursid">-->
+      <form name="forum" method="post" action="entrer.html" onSubmit="return verification1(this.form)">
       <dl>
-	    <dt><label for="username"> Identifiant:</label></dt>
+	    <dt><label for="nom"> Identifiant:</label></dt>
       <dd>
-
-          <input name="username"  tabindex="1" accesskey="i" type="text" value="" size="54" autocomplete="false"/>
-      <!--</div>-->
+        <input name="nom" tabindex="1" type="text" value="" size="54" autocomplete="false"/>
       </dd>
       </dl>
-      <dl><dt><label for="password">Mot de passe:</label></dt>
-        <dd>
-        <!--<div class="bordursid">-->
-            <input name="password" tabindex="2" accesskey="m" type="password" value="" size="54" autocomplete="off"/>
-          <!--</div>-->
-        </dd>
+      <dl>
+      <dt><label for="pass">Mot de passe:</label></dt>
+      <dd>
+          <input name="pass" tabindex="2" type="password" value="" size="54" autocomplete="off"/>
+      </dd>
       </dl>
       <dl>
-        <center><input name="submit" accesskey="l" value="S'identifier" tabindex="4" type="submit" onClick="return verification(this.form)"></center>
+        <center><input name="submit" value="S'identifier" type="submit" onClick="return verification1(forum)"></center>
+      </dl>
+      <dl>
+        <center><input type="button" value="S'inscrire" onClick="self.location.href=('file:///C:/Users/TOSHIBA%20PC/Documents/page/inscription.html');"></center>
       </dl>
       </form>
     </fieldset>

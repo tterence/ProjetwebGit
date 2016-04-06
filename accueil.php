@@ -17,22 +17,6 @@
     </header>
 
     <img src="./campusece.jpg"/>
-
-
-    <p>Bienvenue ! Souhaites tu publier ou voir ce qui se trame dans ton ecole?</p>
-
-  <div class="menug">
-    <fieldset>
-    <nav>
-      <ul>
-        <li><a href="inscription.php"> Inscription</a></li>
-        <li><a href="acceuil.php"> S'identifier</a></li>
-        <li><a href="#"> Trouve ton ami</a></li>
-      </ul>
-    </fieldset>
-      <!--<SPAN style="position: absolute; top: 50 px; left: 500 px;">-->
-  </div>
-
   <h1> Entrez votre identifiant et votre mot de passe: </h1>
 
   <div class="identify">
@@ -50,7 +34,7 @@
 	    <dt><label for="login"> Identifiant:</label></dt>
       <dd>
 
-          <input name="login"  tabindex="1" accesskey="i" type="text" value="" size="54" autocomplete="false"/>
+          <input name="login"  tabindex="1" accesskey="i" type="text" placeholder="exemple: jdoe" size="54" autocomplete="false"/>
       <!--</div>-->
       </dd>
       </dl>
@@ -62,7 +46,8 @@
         </dd>
       </dl>
       <dl>
-        <center><input name="submit" accesskey="l" value="S'identifier" tabindex="4" type="submit" onClick="return verification(this.form)"></center>
+		<center><input name="submit" value="S'identifier" type="submit"></center>
+		<center><input type="button" value="S'inscrire" onClick="self.location.href=('inscription.php');"></center>
       </dl>
       </form>
     </fieldset>

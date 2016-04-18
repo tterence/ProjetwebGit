@@ -9,5 +9,5 @@
 	if(isset($_POST["img"])&&($_POST["img"]!=NULL)){
 		$image=$_POST["img"];
 	}
-	echo ""
+	echo "";
 ?>

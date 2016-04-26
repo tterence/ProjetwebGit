@@ -1,6 +1,7 @@
 <?php
-include 'basededonnees.php';
 session_start();
+include 'basededonnees.php';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,21 +9,24 @@ session_start();
 		<?php include 'menu.php'; ?>
 		<div id="photo_tab">
 		<section>
-			<div class="photo_div">
-			<?php $sql = "SELECT photo_obj FROM photo WHERE user_id=$_SESSION["pseudo"]";
+			<div class="photo_tab">
+			<?php $sql = "SELECT photo_path FROM photo WHERE user_id = '$_SESSION[pseudo]'";
 			$res = $bdd->query($sql);
 			while($rows = $res->fetch()){
-				echo res["photo_obj"];
+				echo "<div class = 'photo_div'>";
+				echo "<img src =".$rows["photo_path"]." alt = \"photo\"></div>";
 			}
 			?>
 			</div>
 		<aside>
 			<div id = "charger_photo">
-				<form action="recup_donnees_photo.php" method="post" >
+				<form action="recup_donnees_photo.php" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="MAX_FILE_SIZE" value="1000000">
 					<input type="file" name="img" placeholder="Select images:" multiple>
 					<input type="submit" value="charger">
 				</form>
 			</div>
 		</div>
+		<?php $bdd = null;?>
 	</body>
 </html>

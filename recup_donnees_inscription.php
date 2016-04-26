@@ -50,7 +50,9 @@ $tel = $_POST["numerotel"];
 try{
 	$sql = "INSERT INTO utilisateur(login,password,email) VALUES ('$lgn','$pwd','$email')";
 	$bdd->exec($sql);
-	$sql = "INSERT INTO customer (user_id,prenom,nom,email,adresse,tel,admin,photo_profil,nbr_photo) VALUES ('$username','$fname','$name','$email','$adress','$tel','1','','0')";
+	$sql = "INSERT INTO customer (user_id,prenom,nom,email,adresse,tel,admin,photo_profil,nbr_photo,login) VALUES ('$username','$fname','$name','$email','$adress','$tel','1','','0','$lgn')";
+	$bdd->exec($sql);
+	$sql = "INSERT INTO photo(user_id) VALUES ('$username')";
 	$bdd->exec($sql);
 	$form=1;
 }

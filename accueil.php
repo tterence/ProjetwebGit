@@ -21,7 +21,7 @@
 
   <div class="identify">
     <fieldset>
-      <form name="forum" method="post" action="recup_donnees_accueil.php" onSubmit="return verification(this.form)">
+      <form name="forum" method="post" action="recup_donnees_accueil.php">
       <!--<table border=0 align="center">
 
 
@@ -34,14 +34,14 @@
 	    <dt><label for="login"> Identifiant:</label></dt>
       <dd>
 
-          <input name="login"  tabindex="1" accesskey="i" type="text" placeholder="exemple: jdoe" size="54" autocomplete="false"/>
+          <input name="login" type="text" placeholder="exemple: jdoe" autocomplete="false"/>
       <!--</div>-->
       </dd>
       </dl>
       <dl><dt><label for="password">Mot de passe:</label></dt>
         <dd>
         <!--<div class="bordursid">-->
-            <input name="password" tabindex="2" accesskey="m" type="password" value="" size="54" autocomplete="off"/>
+            <input name="password" type="password" autocomplete="off"/>
           <!--</div>-->
         </dd>
       </dl>

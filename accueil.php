@@ -59,8 +59,4 @@
 
 </body>
 
-  <footer id="foot">
-    contact         conditions generales               lien
-
-  </footer>
 </html>

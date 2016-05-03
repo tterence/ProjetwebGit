@@ -1,96 +1,9 @@
-#foot footer
-{
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-}
+/* balise commune a toute les pages*/
 
 .p body
 {
   position: relative;
   background-color: #fefee2;
-}
-
-#im div
-{
-	top: 10px;
-	width: 200px;
-	font-weight: bold;
-	background-color: gray;
-	display: flex;
-	font-family: sans-serif;
-	padding-left: 20px;
-	padding-right: 20px;
-	position: relative;
-}
-
-.p header
-{
-font-size: 100px;
-color: white;
-text-shadow: 8px 8px 12px black;
-font-weight: bold;
-background-color: gray;
-display: flex;
-font-family: sans-serif;
-padding-left: 20px;
-padding-right: 20px;
-position: relative;
-}
-
-.p h1
-{
-font-size: 20px;
-color: #256c89;
-position: absolute;
-right:180px;
-top: 140px;
-font-family: sans-serif;
-}
-
-.p h2
-{
-color: #256c89;
-position: absolute;
-font-family: sans-serif;
-font-size: 20px;
-right:130px;
-top: 140px;
-}
-
-.identify input
-{
-  width: 200px;
-	margin-top: 10px;
-	padding: 10px 20px;
-	line-height: 0.5;
-  background-color: white;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 0px;
-}
-
-/*.bordursid div {
-position: relative;
-height: 26px;
-width: auto;
-border-radius: 6px;
-box-shadow: 3px 3px 6px -2px grey;
-padding: 8px 0 0 20px;
-margin: 0;
-float: left;
-line-height: 27px;*/
-
-
-
-.identify fieldset
-{
-top:200px;
-width:10px;
-position: absolute;
-left: 800px;
-right:500px;
 }
 
 .menug fieldset
@@ -102,18 +15,203 @@ right:500px;
   top: 130px;
   left: 0px;
 }
-.error {
-	color: #FF0000;
+
+#im1
+{
+  background-image:url(./campusece2.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 557px;
+  width: 1350px;
 }
 
-/*table input
+#im2 div
+{
+  background-image:url(./logo.jpg);
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+}
+
+#boutton
+{
+  background-color: #32CD32;
+  background-image: -moz-linear-gradient(top, #228B22 0%,#008000 13%,#228B22 32%,#228B22 71%,#32CD32 100%);
+  color: white;
+  font-family: sans-serif; Arial;
+  font-size: 18px;
+}
+
+.p header
+{
+font-family: sans-serif; Arial;
+font-size: 50px;
+color: white;
+text-shadow: 12px 15px 13px 0px #777777;
+-moz-text-shadow: 12px 15px 13px 0px #777777;
+-webkit-text-shadow: 12px 15px 13px 0px #777777;
+background-color:#333;
+display: flex;
+padding-left: 20px;
+padding-right: 20px;
+position: relative;
+}
+
+.identify input
 {
   width: 200px;
 	margin-top: 10px;
 	padding: 10px 20px;
-	line-height: 0.5;
+	line-height: 20px;
   background-color: white;
-	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
-}*/
+  margin: 5px;
+}
+
+.identify fieldset
+{
+-webkit-border-radius: 20px;
+border-radius: 20px;
+top:200px;
+width:320px;
+position: absolute;
+left: 800px;
+right:500px;
+background-color: #F5F5F5;
+}
+#recadre
+ {
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+   top:140px;
+   width:320px;
+   position: absolute;
+   left: 800px;
+   right:500px;
+   background-color: #E6E6FA;
+ }
+
+/* balise 1er page (acceuil) */
+.identify h1
+{
+font-size: 20px;
+color: white;
+font-family: sans-serif;
+}
+
+#foot footer
+{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+/* balise 2eme page (incription) */
+.p h2
+{
+color: #256c89;
+position: absolute;
+font-family: sans-serif;
+font-size: 20px;
+right:130px;
+top: 140px;
+}
+
+/* balise 3eme page (entrer) */
+.menug fieldset
+{
+border: 0px;
+}
+
+ .p h3
+ {
+   font-family: sans-serif;
+   font-size: 30px;
+   color: #008080;
+ }
+
+.menug ul
+{
+list-style-type: none;
+}
+
+.menug li
+{
+margin-right: 5px;
+}
+
+.menug a
+{
+font-size: 1.3em;
+color: #181818;
+padding-bottom: 3px;
+text-decoration: none;
+display:block;
+width: 150px;
+line-height: 35px;
+text-align: center;
+vertical-align: middle;
+background-image:-moz-linear-gradient(top, #e8e8e8 0%,#e3e3e3 13%,#d7d7d7 32%,#b9b9b9 71%,#a9a9a9 100%);;
+border-color: #e9ac1a;
+border-radius: 5px;
+margin-top: 20px;
+box-shadow: 12px 15px 13px 0px #777777;
+-moz-box-shadow: 12px 15px 13px 0px #777777;
+-webkit-box-shadow: 12px 15px 13px 0px #777777;
+}
+
+.menug a:hover
+{
+color: #760001;
+border-bottom: 3px;
+solid: #760001;
+}
+
+
+/* balise 4eme page (profil) */
+.p h4
+{
+  font-family: sans-serif;
+  right: 250px;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #008080;
+}
+
+
+#imrond
+{
+overflow:hidden;
+-webkit-border-radius:80px;
+-moz-border-radius:80px;
+border-radius:80px;
+width:130px;
+height:130px;
+background-color: black;
+right: 80px;
+position: absolute;
+top: 170px;
+}
+
+.cadre fieldset
+{
+width: 400px;
+left:400px;
+position: absolute;
+top: 300px;
+height: 300px;
+}
+/* 5eme page (trouve un ami : requete)*/
+
+.p input {
+  width: 200px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  line-height: 20px;
+  background-color: white;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin: 5px;
+}

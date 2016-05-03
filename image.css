@@ -1,29 +1,16 @@
-<<<<<<< HEAD
-
-img {
-  background-image:url(./logo.jpg);
-  background-repeat: no-repeat;
-  top: 20px
-}
-
-img {
+#im1
+{
   background-image:url(./campusece.jpg);
-  background-repeat: no-repeat;
-  background-attachment:fixed;
   position: absolute;
+  background-repeat: no-repeat;
+  height: 530px;
+  width: 630px;
 }
-=======
 
-img {
+#im2 div
+{
   background-image:url(./logo.jpg);
   background-repeat: no-repeat;
   top: 20px;
+  right: 20px;
 }
-
-img {
-  background-image:url(./campusece.jpg);
-  background-attachment:fixed;
-  position: absolute;
-  height: 850px;
-}
->>>>>>> origin/Modification_php

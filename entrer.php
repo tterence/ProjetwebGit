@@ -49,12 +49,14 @@
 		}
 	}
 	?>
-	<div id="deconnexion">
+	<script>
 	<?php
-		//session_destroy();
-		//header("Location: accueil.php");
+		session_destroy();
+		header("Location: accueil.php");
 	?>
-	</span>
+	</script>
+	<div id="deconnexion" onclick="deco()">
+	</div>
   
 	<?php $bdd = null;?>
   </body>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'basededonnees.php';
-
+include 'fonction.php';
 ?>
 <!DOCTYPE html>
 <html>

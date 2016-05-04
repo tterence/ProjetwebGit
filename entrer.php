@@ -41,7 +41,7 @@
 		}
         ?>
         <li><a href="#amis">Amis</a></li>
-        <li><a href="#deconnexion">Se deconnecter</a></li>";
+        <li><a href="deconnexion.php">Se deconnecter</a></li>
       </ul>
     </fieldset>
       <!--<SPAN style="position: absolute; top: 50 px; left: 500 px;">-->
@@ -58,6 +58,7 @@
 		}
 	}
 	?>
+<<<<<<< HEAD
 	<div id="deconnexion">
 <<<<<<< HEAD
 	<?php
@@ -74,6 +75,9 @@
 		?>
 	</div>
 	<div id="amis"><h2>Mes amis sont:</h2></div>
+>>>>>>> origin/update-html
+=======
+	<div id="amis"><h2></h2></div>
 >>>>>>> origin/update-html
 	<?php $bdd = null;?>
   </body>

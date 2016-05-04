@@ -1,7 +1,12 @@
 <?php
 	session_start();
 	include 'basededonnees.php';
+<<<<<<< HEAD
 ?>
+=======
+	//include 'fonction.php';
+?>	
+>>>>>>> origin/update-html
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,7 +41,7 @@
 		}
         ?>
         <li><a href="#amis">Amis</a></li>
-        <li><a href="#deconnexion"> Se deconnecter</a></li>";
+        <li><a href="#deconnexion">Se deconnecter</a></li>";
       </ul>
     </fieldset>
       <!--<SPAN style="position: absolute; top: 50 px; left: 500 px;">-->
@@ -54,12 +59,22 @@
 	}
 	?>
 	<div id="deconnexion">
+<<<<<<< HEAD
 	<?php
 		//session_destroy();
 		//header("Location: accueil.php");
 	?>
 	</span>
 
+=======
+		<?php
+			session_destroy();
+			//header("Location: accueil.php");
+			echo "coucou";
+		?>
+	</div>
+	<div id="amis"><h2>Mes amis sont:</h2></div>
+>>>>>>> origin/update-html
 	<?php $bdd = null;?>
   </body>
 </html>

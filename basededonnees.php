@@ -43,7 +43,7 @@ try {
     }
 catch(PDOException $e)
     {
-    echo $sql."<br>Connection failed: " . $e->getMessage();
+    echo "<br>Connection failed: " . $e->getMessage();
     }
 /* echo "</table>"; */
 /*$bdd=null;*/

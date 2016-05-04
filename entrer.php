@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	include 'basededonnees.php';
-?>	
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,6 +23,10 @@
     <fieldset>
     <nav>
       <ul>
+			</ul>
+		</fieldset>
+			<!--<SPAN style="position: absolute; top: 50 px; left: 500 px;">-->
+	</div>
 	  <?php
 		$sql = "SELECT prenom,nom FROM customer WHERE user_id = '$_SESSION[pseudo]'";
 		$res = $bdd->query($sql);
@@ -55,7 +59,7 @@
 		//header("Location: accueil.php");
 	?>
 	</span>
-  
+
 	<?php $bdd = null;?>
   </body>
 </html>

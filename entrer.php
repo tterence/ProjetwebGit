@@ -33,7 +33,7 @@
 		}
         ?>
         <li><a href="#amis">Amis</a></li>
-        <li><a href="#deconnexion">Se deconnecter</a></li>";
+        <li><a href="deconnexion.php">Se deconnecter</a></li>
       </ul>
     </fieldset>
       <!--<SPAN style="position: absolute; top: 50 px; left: 500 px;">-->
@@ -50,14 +50,7 @@
 		}
 	}
 	?>
-	<div id="deconnexion">
-		<?php
-			session_destroy();
-			//header("Location: accueil.php");
-			echo "coucou";
-		?>
-	</div>
-	<div id="amis"><h2>Mes amis sont:</h2></div>
+	<div id="amis"><h2></h2></div>
 	<?php $bdd = null;?>
   </body>
 </html>

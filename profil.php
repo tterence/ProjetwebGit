@@ -48,11 +48,11 @@ include 'fonction.php';
 				<?php include 'miniature.php';
 					$sql = "SELECT photo_profil FROM customer WHERE user_id = '$_SESSION[pseudo]'";
 					$res = $bdd->query($sql);
-					$afficher = true;
+					$afficher = false;
 					while ($rows = $res->fetch()){
-						if (isset($rows['photo_profil'])){
-							$afficher = false;
-						}else {$afficher = true;}
+						if ($rows['photo_profil']==''){
+							$afficher = true;
+						}
 						
 					if ($afficher){
 						echo "<img src =";

@@ -26,6 +26,12 @@ include 'basededonnees.php';
 					<input type="submit" value="charger">
 				</form>
 			</div>
+			<!--div id = "supprimer_photo">
+				<form action = "recup_donnees_photo.php" method="post">
+					<input type="radio" name="image" value="Profil">Profil<br>
+					<input type="radio" name="image" value="Photo">Photo<br>
+					<input type="submit" value="Valider">
+				-->
 		</div>
 		<?php $bdd = null;?>
 	</body>
